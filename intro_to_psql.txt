@@ -1,0 +1,36 @@
+\d [NAME]      describe table, index, sequence, or view
+\d{t|i|s|v|S} [PATTERN] (add "+" for more detail)
+               list tables/indexes/sequences/views/system tables
+\da [PATTERN]  list aggregate functions
+\db [PATTERN]  list tablespaces (add "+" for more detail)
+\dc [PATTERN]  list conversions
+\dC            list casts
+\dd [PATTERN]  show comment for object
+\dD [PATTERN]  list domains
+\df [PATTERN]  list functions (add "+" for more detail)
+\dg [PATTERN]  list groups
+\dn [PATTERN]  list schemas (add "+" for more detail)
+\do [NAME]     list operators
+\dl            list large objects, same as \lo_list
+\dp [PATTERN]  list table, view, and sequence access privileges
+\dT [PATTERN]  list data types (add "+" for more detail)
+\du [PATTERN]  list users
+
+\l             list all databases (add "+" for more detail)
+\e             edit the query buffer in external text editor
+\p						 show the contents of the query buffer
+\w 						 write the query buffer to a file
+\r 	           reset the query buffer
+\c [NAME]			 connect to database with that name (also \connect [NAME] works)
+
+\copy          
+\i FILE        execute commands from file
+\o [FILE]      send all query results to file or |pipe
+
+\h [NAME]      get help on the syntax of a particular SQL clause
+
+\! [COMMAND]   execute command in shell or start interactive shell
+\?             get a more complete list of psql short-cuts
+
+... and most importantly
+\q				     quit psql and go back to terminal
